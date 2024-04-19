@@ -24,6 +24,13 @@
             background-color: #dedede;
             color: #232323;
             font-family: 'Newake', sans-serif;;
+            position: relative;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
         }
 
         a {
@@ -32,52 +39,96 @@
         }
 
         .bar {
+            /*outline: #050505 solid .5px;*/
             margin: -8px -8px -60px -8px;
+            height: 190px;
+            transition: .13s;
         }
 
         .logo {
+            /*outline: #050505 solid .5px;*/
             height: 130px;
             margin-top: 42px;
-            margin-left: 54px;
+            margin-left: 75px;
+            transition: .13s;
         }
 
         .hcca {
+            /*outline: #050505 solid .5px;*/
             width: fit-content;
             height: 77px;
             float: right;
             margin-right: 86px;
             margin-top: 60px;
             padding-top: 17px;
+            transition: .13s;
         }
 
         .home {
+            /*outline: #050505 solid .5px;*/
             margin-top: -19px;
             margin-bottom: -25px;
             width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+            margin-left: 0px;
+        }
+
+        .home:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .catalogue {
+            /*outline: #050505 solid .5px;*/
             margin-bottom: -25px;
             width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .catalogue:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .contact {
+            /*outline: #050505 solid .5px;*/
             margin-bottom: -25px;
             width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+            margin-left: 0px;
+        }
+
+        .contact:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .about {
+            /*outline: #050505 solid .5px;*/
             margin-bottom: -25px;
             width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+            margin-left: 0px;
+        }
+
+        .about:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .content {
+            /*outline: #050505 solid .5px;*/
             width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .title {
+            /*outline: #050505 solid .5px;*/
             width: fit-content;
             margin-bottom: 0px;
             text-align: center;
@@ -86,53 +137,91 @@
             font-size: 109.6px;
             margin-left: auto;
             margin-right: auto;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .title:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .title2 {
+            /*outline: #050505 solid .5px;*/
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
             margin-top: -11px;
             font-size: 34px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .title2:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .title3 {
+            /*outline: #050505 solid .5px;*/
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
             margin-top: -30px;
             font-size: 26px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .title3:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .sectiontitle {
             font-weight: 800;
             font-size: 55px;
             letter-spacing: -2px;
+            /*outline: #050505 solid .5px;*/
             width: fit-content;
             margin-top: 0px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .sectiontitle:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .paragraph {
+            /*outline: #050505 solid .5px;*/
             width: fit-content;
             font-size: 19px;
             margin-top: -30px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .paragraph:hover {
+            background-color: #232323;
+            color: #dedede;
         }
 
         .contactbox {
             border: 3px solid #000;
             border-radius: 10px;
-            margin-top: -5px;
-            margin-bottom: 0px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: -5px auto 0px auto;
             width: 158px;
             height: 51px;
-            background: #fff;
-            transition: .2s;
+            background: #23232300;
+            color: #232323;
+            transition: .13s;
         }
 
         .contactbox:hover {
-            background: #ff00;
+            background: #232323;
+            color: #dedede;
         }
 
         .contacth1 {
@@ -142,13 +231,177 @@
         }
 
         .img1 {
+            /*outline: #050505 solid .5px;*/
             width: 100%;
             margin-left: auto;
             margin-right: auto;
             display: block;
         }
 
+        @media only screen and (max-width: 633px) {
+            .content {
+                width: 100%;
+            }
+
+            .title {
+                font-size: 100px;
+            }
+
+            .title2 {
+                font-size: 30px;
+            }
+
+            .title3 {
+                font-size: 20px;
+            }
+
+            .sectiontitle {
+                font-size: 48px;
+            }
+        }
+
+        @media only screen and (max-width: 562px) {
+            .content {
+                margin-top: 62px;
+            }
+
+            .title {
+                font-size: 87px;
+            }
+
+            .title2 {
+                font-size: 26px;
+            }
+
+            .title3 {
+                font-size: 17px;
+            }
+
+            .sectiontitle {
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width: 490px) {
+            .bar {
+                height: 135px;
+            }
+
+            .logo {
+                height: 90px;
+                margin-top: 27px;
+                margin-left: 34px;
+            }
+
+            .hcca {
+                margin-right: 28px;
+                margin-top: 28px;
+            }
+
+            .title {
+                font-size: 77px;
+            }
+
+            .title2 {
+                font-size: 23px;
+            }
+
+            .title3 {
+                font-size: 15px;
+                margin-top: -21px;
+            }
+
+            .sectiontitle {
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width: 429px) {
+            .title {
+                font-size: 66px;
+            }
+
+            .title2 {
+                font-size: 19px;
+            }
+
+            .title3 {
+                font-size: 13px;
+                margin-top: -15px;
+            }
+
+            .sectiontitle {
+                font-size: 39x;
+            }
+        }
+
+        @media only screen and (max-width: 364px) {
+            .title {
+                font-size: 57px;
+            }
+
+            .title2 {
+                font-size: 19px;
+            }
+
+            .title3 {
+                font-size: 13px;
+                margin-top: -15px;
+            }
+
+            .sectiontitle {
+                font-size: 39x;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .bar {
+                height: 167px;
+            }
+
+            .logo {
+                height: 110px;
+                margin-top: 38px;
+                margin-left: 51px;
+            }
+
+            .hcca {
+                margin-right: 53px;
+                margin-top: 48px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .bar {
+                height: 149px;
+            }
+
+            .logo {
+                height: 90px;
+                margin-top: 35px;
+                margin-left: 51px;
+            }
+
+            .hcca {
+                margin-right: 38px;
+                margin-top: 35px;
+            }
+
+            .home {
+                margin-left: 55px;
+            }
+
+            .contact {
+                margin-left: 30px;
+            }
+
+            .about {
+                margin-left: 49px;
+            }
+        }
+
         .footer {
+            /*outline: #050505 solid .5px;*/
             margin-left: auto;
             margin-right: auto;
             font-family: Helvetica, sans-serif;
@@ -158,6 +411,13 @@
             margin-bottom: 41px;
             letter-spacing: -.5px;
             display: block;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .footer:hover {
+            background: #232323;
+            color: #dedede;
         }
 
     </style>
@@ -166,10 +426,10 @@
         <div class="bar">
             <img src="https://i.imgur.com/WZ5PnvA.png" alt="UnsyncLogo" class="logo">
             <div class="hcca">
-                <h2 class="home">home</h2>
-                <h2 class="catalogue">catalogue</h2>
-                <h2 class="contact">contact</h2>
-                <h2 class="about">about</h2>
+                <a href="#"><h2 class="home">home</h2></a>
+                <a href="#"><h2 class="catalogue">catalogue</h2></a>
+                <a href="#"><h2 class="contact">contact</h2></a>
+                <a href="#"><h2 class="about">about</h2></a>
             </div>
             
         </div>
@@ -179,8 +439,8 @@
             <h2 class="title2">A new Techno Record Label</h2>
             <h3 class="title3">[Specifically HardGroove]*</h3>
 
-            <img src="https://i.imgur.com/Vyw0i0q.png" class="img1">
-            <h2 class="sectiontitle">*Not just HardGroove</h2>
+            <img src="https://i.imgur.com/hwZXqBO.png" class="img1">
+            <h2 class="sectiontitle">*But not just HardGroove</h2>
             <p class="paragraph">
                 Since this is a Record Label, that also acts as a Collective,<br/>
                 we're not just looking for HardGroove Artists or Tracks.<br/>
@@ -231,7 +491,7 @@
             </p>
 
 
-            <img src="https://i.imgur.com/yNpCObH.png" class="img1">
+            <img src="https://i.imgur.com/EjRWtEh.png" class="img1">
             <h2 class="sectiontitle">Yes, Free Music Distribution</h2>
             <p class="paragraph">
                 In short,<br/><br/>
@@ -262,9 +522,31 @@
 
                 <span style="font-size: 12px; opacity: .8;">*Yep, you read that right. No strings attached. Everything you create stays yours. No catch.</span>
             </p>
+
+            <!--https://i.imgur.com/yn6AHzo.png-->
+            <img src="https://i.imgur.com/M8BKT8p.png" class="img1">
+            <h2 class="sectiontitle">In Conclusion..</h2>
+            <p class="paragraph">
+                Unsync Records simply tries to be as transparent as possible.<br/><br/>
+
+                Because it has been seen how disgusting some distributors can be..<br/>
+                Outright stealing from their Artists..<br/><br/>
+
+                But that won't go here.<br/><br/>
+
+                Money is not everything..<br/>
+                Especially not at Unsync Records.<br/><br/>
+
+                But you know what is important here?<br/>
+                That's right!<br/>
+                It's Techno.<br/><br/>
+
+                And if you said anything else, well.. you are entitled to your opinion :)<br/>
+                ..obviously.
+            </p>
                 
                 
-            <img src="https://i.imgur.com/1lnSb2I.png" class="img1">
+            <img src="https://i.imgur.com/bth0i3G.png" class="img1">
             <h2 class="sectiontitle">Contact.</h2>
             <p class="paragraph">
                 In case none of the above interests you, and you'd like to inquire about something else, you can surely write us an email.<br/><br/>
