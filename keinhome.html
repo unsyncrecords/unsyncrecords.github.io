@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage of KEIN NAME.">
+
+    <meta property="og:title" content="KEIN NAME">
+    <meta property="og:description" content="Homepage of KEIN NAME.">
+    <meta property="og:image" content="--------------">
+    <meta property="og:url" content="--------------">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="--------------">
+    <link rel="apple-touch-icon" sizes="180x180" href="--------------">
+    <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+    <title>KEIN NAME.</title>
+    
+    <style>
+        @font-face {
+            font-family: TheGoodMonolith;
+            src: url(https://unsyncrecords.github.io/TheGoodMonolith.ttf) format("opentype");
+        }
+
+        @font-face {
+            font-family: GendisBody-Regular;
+            src: url(https://unsyncrecords.github.io/GendisBody-Regular.otf) format("opentype");
+        }
+
+        body {
+            background-color: #dedede;
+            color: #232323;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: #232323;
+        }
+
+        .all {
+            /*outline: #f00 solid .5px;*/
+            height: 900px;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img_ {
+            cursor: cell;
+            display: block;
+            width: 607px;
+            height: 607px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img_::selection {
+            background-color: #23232300;
+        }
+
+        .title_ {
+            cursor: cell;
+            font-family: GendisBody-Regular;
+            font-size: 136px;
+            rotate: -90deg;
+            margin-top: -175px;
+            width: 585px;
+            position: relative;
+            right: -400px;
+            z-index: 10;
+        }
+
+        .title_:hover {
+            cursor: url("https://i.imgur.com/aA3kxqY.png"), cell;
+        }
+
+        .title_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .title_.inactive {
+            pointer-events: none;
+        }
+
+        #customMessageBox {
+            position: absolute;
+            display: none;
+            background-color: #232323;
+            color: #dedede;
+            padding: 5px;
+            font-family: GendisBody-Regular;
+            font-size: 14px;
+            pointer-events: none;
+            z-index: 1000;
+            height: 12px;
+        }
+
+        #fp_.active {
+            cursor: default;
+            font-family: GendisBody-Regular;
+            font-size: 136px;
+            rotate: -90deg;
+            margin-top: -324.5px;
+            width: 585px;
+            position: relative;
+            top: -123px;
+            right: -400px;
+            z-index: 10;
+        }
+        
+        .hier {
+            cursor: default;
+            font-family: TheGoodMonolith;
+            font-weight: 900;
+            color: #232323;
+            -webkit-text-stroke: 1px #232323;
+            display: block;
+            text-align: center;
+            margin-top: -571px;
+            margin-left: -437px;
+            transition: .1s;
+        }
+
+        .hier::selection {
+            background-color: #dedede;
+            color: #232323;
+        }
+
+        .ch {
+            cursor: default;
+            font-family: GendisBody-Regular;
+            font-size: 45px;
+            text-align: center;
+            display: block;
+            margin-top: 14px;
+            margin-left: -553px;
+            transition: .13s;
+        }
+
+        .ch:hover {
+            filter: blur(3px);
+        }
+
+        .ch::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .lebe {
+            cursor: default;
+            font-family: TheGoodMonolith;
+            font-size: 45px;
+            font-weight: 900;
+            color: #dedede;
+            -webkit-text-stroke: 1px #dedede;
+            text-align: center;
+            display: block;
+            margin-top: 450px;
+            margin-left: -416px;
+        }
+
+        .lebe::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+        
+        .wrld {
+            filter: invert(86.6%);
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -566px;
+            right: -264px;
+            height: fit-content;
+            width: 28px;
+            display: block;
+        }
+
+        .wrld::selection {
+            background-color: #dedede00;
+        }
+
+        .clock {
+            cursor: default;
+            font-family: TheGoodMonolith;
+            font-size: 45px;
+            color: #dedede;
+            text-align: center;
+            display: block;
+            margin-top: 489px;
+            margin-left: 354px;
+            width: 162px;
+            position: relative;
+            right: -156px;
+            z-index: 1;
+        }
+
+        .clock::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .menu_ {
+            /*outline: #f00 solid .5px;*/
+            font-family: TheGoodMonolith;
+            margin-top: 56px;
+            margin-left: 93px;
+            width: 506px;
+            height: 183px;
+        }
+
+        .menu_tag {
+            cursor: default;
+            font-size: 22px;
+        }
+
+        .menu_tag::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .acso {
+            font-size: 22px;
+            margin-top: 26px;
+            margin-left: 23px;
+        }
+
+        .about_ {
+            cursor: default;
+            width: fit-content;
+            transition: .13s;
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .about_:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .about_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .catalogue_ {
+            cursor: pointer;
+            width: fit-content;
+            transition: .13s;
+        }
+
+        .catalogue_:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .catalogue_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .sets_ {
+            cursor: pointer;
+            width: fit-content;
+            transition: .13s;
+        }
+
+        .sets_:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .sets_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .other_ {
+            cursor: pointer;
+            width: fit-content;
+            transition: .13s;
+        }
+
+        .other_:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .other_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .copyright_ {
+            cursor: default;
+            font-size: 12.5px;
+            width: fit-content;
+            margin-top: 11px;
+            margin-left: 3px;
+        }
+
+        .copyright_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .span_h {
+            display: inline-block;
+            transition: .13s;
+        }
+
+        .span_h:hover {
+            cursor: default;
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .span_h::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .container_ {
+            /*outline: #f00 solid .5px;*/
+            border: #232323 solid 2px;
+            height: 127px;
+            width: 261px;
+            margin-top: -130px;
+            margin-left: 245px;
+            overflow-x: hidden;
+        }
+
+        .container_.expand {
+            height: fit-content;
+        }
+
+        .pararaph_ {
+            cursor: cell;
+            font-size: 12px;
+            text-align: justify;
+            padding: 3px 11px 3px 5px;
+        }
+
+        .pararaph_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .expand_ {
+            width: fit-content;
+            margin-top: 10px;
+            margin-left: 462px;
+            transition: .13s;
+        }
+
+        .expand_:hover {
+            cursor: pointer;
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .expand_::selection {
+            background-color: #232323;
+            color: #dedede;
+        }
+    </style>
+
+    <body>
+        <div class="all">
+            <img class="img_" src="file:///Users/denistrautvein/Desktop/detra%202.jpg">
+            <div id="fp_" class="title_">KEIN NAME</div>
+            <div class="hier">hier sind wir auf</div>
+            <div class="ch">CH _01.</div>
+            <a href="file:///Users/denistrautvein/Documents/_/code/KEIN%20NAME/keincatalogue.html"><div class="lebe">Lebe.</div></a>
+            <img class="wrld" src="https://i.imgur.com/dRaQIa5.gif">
+            <div class="clock" id="clock">00:00:00</div>
+            <div class="menu_">
+                <div class="menu_tag">------ MENU ------</div>
+                <div class="acso">
+                    <div class="about_">ABOUT</div>
+                    <a href="file:///Users/denistrautvein/Documents/_/code/KEIN%20NAME/keincatalogue.html">
+                    <div class="catalogue_">CATALOGUE</div></a>
+                    <a href="file:///Users/denistrautvein/Documents/_/code/KEIN%20NAME/keinsets.html">
+                    <div class="sets_">SETS</div></a>
+                    <a href="file:///Users/denistrautvein/Documents/_/code/KEIN%20NAME/keinothers.html">
+                    <div class="other_">OTHER..</div></a>
+                </div>
+                <div class="copyright_">
+                    <span class="span_h">&copy;</span> <span class="span_h">2024</span>
+                    <span class="span_h">KEIN</span> <span class="span_h">NAME.</span>
+                    <br/>
+                    <span class="span_h">LICENSED</span> <span class="span_h">BY</span>
+                    <span class="span_h">UNSYNC</span> <span class="span_h">RECORDS.</span>
+                </div>
+                <div class="container_">
+                    <div class="pararaph_">
+                        KEIN NAME is an artist based in Central Europe,
+                        with a passion for producing and DJing Techno Music.
+                        KEIN NAME has been deeply immersed in the electronic
+                        music scene, carving out a unique space with a
+                        distinctive sound and style.
+                        <br/><br/>
+                        "I've been producing Music for several years now,
+                        over eight years actually, and I'm also a lot of
+                        other things.. such as a DJ, Designer, Photo and
+                        Videographer, Writer, and Creative Director. (but
+                        the list is somewhat longer)
+                        Despite my disability, I've never let it hold me
+                        back. Everything I've wanted to achieve, I've
+                        found my own way to do it. While others might
+                        follow a more conventional path, I've had to
+                        innovate and adapt, doing things differently
+                        but reaching  the same heights.
+                        <br/><br/>
+                        And I think that is so great because now I can
+                        be a one-man company, since I'm able to do
+                        everything myself and don't need anybody to do
+                        what I truly want to. That's why I think it's
+                        safe to say that I'm actually starting from the
+                        bottom all alone, and with nothing.
+                        <br/><br/>
+                        BUT I could never forget the only two people
+                        that have actually helped me, and still do to
+                        this day.. Those people are my loving Mother
+                        and my Step Father.
+                        <br/><br/>
+                        Although I'm not a trust-fund baby, and neither
+                        are we rich or anything like that, my parents
+                        have helped me just like rich parents would, but
+                        with a hell of a lot more waiting involved.<br/>
+                        For example:<br/>
+                        if some rich kid wants a new computer, he
+                        probably gets it immediately.
+                        But if I need a new one, I also get it..
+                        although, I do have to wait a year.
+                        <br/><br/>
+                        My Music and Sets are heavily inspired by the
+                        Old School Techno scene from the 90s to around
+                        2010. I love those classic Tracks and that's what
+                        you'll hear when I play. They bring a certain
+                        Energy and Nostalgia that I just can't get enough of.<br/>
+                        For me, it's all about staying true to
+                        that sound and keeping the spirit of those
+                        early days alive in most of what I do.
+                        <br/><br/>
+                        So, welcome to my world. It's not corporate,
+                        it's just me, making Music and spinning tracks
+                        from my living room."
+                    </div>
+                </div>
+                <div class="expand_">EXPAND</div>
+            </div>
+        </div>
+
+        <script>
+            // clock start
+            function updateClock() {
+                const clockElement = document.getElementById('clock');
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const seconds = String(now.getSeconds()).padStart(2, '0');
+                clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+            }
+            
+            setInterval(updateClock, 1000);
+            updateClock();
+            // clock end
+           
+            // expand start
+            document.querySelector('.expand_').addEventListener('click', function() {
+                var container = document.querySelector('.container_');
+                container.classList.toggle('expand');
+            });
+            // expand end
+
+            // fp start
+            document.getElementById("fp_").addEventListener("click", function() {
+                var textElement = document.getElementById("fp_");
+                if (textElement.innerHTML === "KEIN NAME") {
+                    textElement.innerHTML = "FREE PALESTINE!";
+                    textElement.classList.add("active");
+                } else if (textElement.innerHTML === "FREE PALESTINE!") {
+                    textElement.innerHTML = "STOP THE GENOCIDE!";
+                } else {
+                    textElement.innerHTML = "KEIN NAME";
+                    textElement.classList.remove("active");
+                }
+            });
+            // fp end
+
+            // cursor message start
+            const customMessageBox = document.createElement('div');
+            customMessageBox.id = 'customMessageBox';
+            customMessageBox.innerHTML = 'click me!';
+            document.body.appendChild(customMessageBox);
+             
+            const titleElement = document.querySelector('.title_');
+            titleElement.addEventListener('mouseenter', function(event) {
+                customMessageBox.style.display = 'block';
+                updateMessageBoxPosition(event);
+            });
+
+            titleElement.addEventListener('mousemove', updateMessageBoxPosition);
+            titleElement.addEventListener('mouseleave', function() {
+                customMessageBox.style.display = 'none';
+            });
+            
+            function updateMessageBoxPosition(event) {
+                customMessageBox.style.left = `${event.pageX + 0}px`;
+                customMessageBox.style.top = `${event.pageY + -39}px`;
+            }
+            // cursor message end
+        </script>
+    </body>
+</html>
