@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage of Unsync Records.">
+
+    <meta property="og:title" content="Unsync Records">
+    <meta property="og:description" content="Homepage of Unsync Records.">
+    <meta property="og:image" content="https://i.imgur.com/xOe7giH.png">
+    <meta property="og:url" content="https://unsyncrecords.github.io/index">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="https://i.imgur.com/N25Y7Ue.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.imgur.com/N25Y7Ue.png">
+    <title>Unsync Records</title>
+    
+    <style>
+        @font-face {
+            font-family: Newake;
+            src: url(https://unsyncrecords.github.io/Newake.otf) format("opentype");
+        }
+
+        body {
+            background-color: #dedede;
+            color: #232323;
+            font-family: 'Newake', sans-serif;;
+            position: relative;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #232323;
+        }
+
+        .bar {
+            /*outline: #050505 solid .5px;*/
+            margin: -8px -8px -60px -8px;
+            height: 190px;
+            transition: .13s;
+        }
+
+        .logo {
+            /*outline: #ff0000 solid .5px;*/
+            height: 130px;
+            margin-top: 42px;
+            margin-left: 75px;
+            transition: .13s;
+        }
+
+        .hcca {
+            /*outline: #050505 solid .5px;*/
+            width: fit-content;
+            height: 77px;
+            float: right;
+            margin-right: 86px;
+            margin-top: 60px;
+            padding-top: 17px;
+            transition: .13s;
+        }
+
+        .home {
+            /*outline: #050505 solid .5px;*/
+            margin-top: -19px;
+            margin-bottom: -25px;
+            width: fit-content;
+            background-color: #232323;
+            color: #dedede;
+            transition: .13s;
+            margin-left: 0px;
+        }
+
+        .catalogue {
+            /*outline: #050505 solid .5px;*/
+            margin-bottom: -25px;
+            width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .catalogue:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .contact {
+            /*outline: #050505 solid .5px;*/
+            margin-bottom: -25px;
+            width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+            margin-left: 0px;
+        }
+
+        .contact:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .about {
+            /*outline: #050505 solid .5px;*/
+            margin-bottom: -25px;
+            width: fit-content;
+            background-color: #23232300;
+            transition: .13s;
+            margin-left: 0px;
+        }
+
+        .about:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .content {
+            /*outline: #050505 solid .5px;*/
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            /*outline: #050505 solid .5px;*/
+            width: fit-content;
+            margin-bottom: 0px;
+            text-align: center;
+            font-family: 'Newake', sans-serif;
+            letter-spacing: -3px;
+            font-size: 109.6px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .title:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .title2 {
+            /*outline: #050505 solid .5px;*/
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -11px;
+            font-size: 34px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .title2:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .title3 {
+            /*outline: #050505 solid .5px;*/
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -30px;
+            font-size: 26px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .title3:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .sectiontitle {
+            font-weight: 800;
+            font-size: 55px;
+            letter-spacing: -2px;
+            /*outline: #050505 solid .5px;*/
+            width: fit-content;
+            margin-top: 0px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .sectiontitle:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .paragraph {
+            /*outline: #050505 solid .5px;*/
+            width: fit-content;
+            font-size: 19px;
+            margin-top: -30px;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .paragraph:hover {
+            background-color: #232323;
+            color: #dedede;
+        }
+
+        .schnitt {
+            border-bottom: #23232380 solid 1.5px;
+            border-radius: 2px;
+            width: 60%;
+            margin: 20px auto 20px auto;
+        }
+
+        .contactbox {
+            border: 3px solid #000;
+            border-radius: 10px;
+            margin: -5px auto 0px auto;
+            width: 158px;
+            height: 51px;
+            background: #23232300;
+            color: #232323;
+            transition: .13s;
+        }
+
+        .contactbox:hover {
+            background: #232323;
+            color: #dedede;
+        }
+
+        .contacth1 {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 27px;
+        }
+
+        .img1 {
+            /*outline: #050505 solid .5px;*/
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 19px;
+            background: #23232300;
+            transition: .13s;
+        }
+
+        .img1:hover {
+            background: #23232323;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .bar {
+                height: 167px;
+            }
+
+            .logo {
+                height: 110px;
+                margin-top: 38px;
+                margin-left: 51px;
+            }
+
+            .hcca {
+                margin-right: 53px;
+                margin-top: 48px;
+            }
+        }
+
+        @media only screen and (max-width: 633px) {
+            .content {
+                width: 100%;
+            }
+
+            .title {
+                font-size: 100px;
+            }
+
+            .title2 {
+                font-size: 30px;
+            }
+
+            .title3 {
+                font-size: 20px;
+            }
+
+            .sectiontitle {
+                font-size: 48px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .bar {
+                height: 149px;
+            }
+
+            .logo {
+                height: 90px;
+                margin-top: 35px;
+                margin-left: 51px;
+            }
+
+            .hcca {
+                margin-right: 38px;
+                margin-top: 35px;
+            }
+
+            .home {
+                margin-left: 55px;
+            }
+
+            .contact {
+                margin-left: 30px;
+            }
+
+            .about {
+                margin-left: 49px;
+            }
+        }
+
+        @media only screen and (max-width: 562px) {
+            .content {
+                margin-top: 62px;
+            }
+
+            .title {
+                font-size: 87px;
+            }
+
+            .title2 {
+                font-size: 26px;
+            }
+
+            .title3 {
+                font-size: 17px;
+            }
+
+            .sectiontitle {
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width: 490px) {
+            .bar {
+                height: 135px;
+            }
+
+            .logo {
+                height: 90px;
+                margin-top: 27px;
+                margin-left: 34px;
+            }
+
+            .hcca {
+                margin-right: 28px;
+                margin-top: 28px;
+            }
+
+            .title {
+                font-size: 77px;
+            }
+
+            .title2 {
+                font-size: 23px;
+            }
+
+            .title3 {
+                font-size: 15px;
+                margin-top: -21px;
+            }
+
+            .sectiontitle {
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (max-width: 429px) {
+            .title {
+                font-size: 66px;
+            }
+
+            .title2 {
+                font-size: 19px;
+            }
+
+            .title3 {
+                font-size: 13px;
+                margin-top: -15px;
+            }
+
+            .sectiontitle {
+                font-size: 39x;
+            }
+        }
+
+        @media only screen and (max-width: 364px) {
+            .title {
+                font-size: 57px;
+            }
+
+            .title2 {
+                font-size: 19px;
+            }
+
+            .title3 {
+                font-size: 13px;
+                margin-top: -15px;
+            }
+
+            .sectiontitle {
+                font-size: 39x;
+            }
+        }
+
+        .footer {
+            /*outline: #050505 solid .5px;*/
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Helvetica, sans-serif;
+            font-size: 10px;
+            width: fit-content;
+            margin-top: 57px;
+            margin-bottom: 41px;
+            letter-spacing: -.5px;
+            display: block;
+            background-color: #23232300;
+            transition: .13s;
+        }
+
+        .footer:hover {
+            background: #232323;
+            color: #dedede;
+        }
+
+    </style>
+
+    <body>
+        <div class="bar">
+            <img src="https://i.imgur.com/9d9MP3X.png" alt="UnsyncLogo" class="logo">
+            <div class="hcca">
+                <h2 class="home">home</h2>
+                <a href="https://unsyncrecords.github.io/catalogue"><h2 class="catalogue">catalogue</h2></a>
+                <a href="https://unsyncrecords.github.io/contact"><h2 class="contact">contact</h2></a>
+                <a href="https://unsyncrecords.github.io/about"><h2 class="about">about</h2></a>
+            </div>
+            
+        </div>
+
+        <div class="content">
+            <h1 class="title">Get Groovin'</h1>
+            <h2 class="title2">A new Techno Record Label</h2>
+            <h3 class="title3">[Specifically HardGroove]*</h3>
+
+            <img src="https://i.imgur.com/hwZXqBO.png" class="img1">
+            <h2 class="sectiontitle">*But not just HardGroove</h2>
+            <p class="paragraph">
+                Since this is a Record Label, that also acts as a Collective,<br/>
+                we're not just looking for HardGroove Artists or Tracks.<br/>
+                The search is for something out of the ordinary and underground.<br/><br/>
+
+                Some could say that we aren't looking for anything or anyone at all..<br/>
+            </p>
+            <div class="schnitt"></div>
+
+            <img src="https://i.imgur.com/udxQciw.png" class="img1">
+            <h2 class="sectiontitle">No Contracts, Too much Paperwork..</h2>
+            <p class="paragraph">
+                If you'd like to be part of this, without any commitments, you can be rest assured that you can. And there won't be any sneaky contracts going on..<br/><br/>
+
+                This Record Label is run by an Artist who just wants to make Music and get it out there..<br/><br/>
+
+                Nothing more.<br/><br/><br/>
+
+                So if you'd like to get your Music out there,<br/>
+                fair and square,<br/>
+                and with an insanely generous split,<br/>
+                then hit us up.<br/><br/>
+
+                Because at the end of the day, it's not about money so much as it's about the art of being able to just focus on what's really important:<br/><br/>
+
+                Being an Artist and making good music,<br/>
+                not being a businesswo<strong>/</strong>man and drowning in Paperwork.<br/><br/>
+
+                <span style="font-size: 12px; opacity: .8;">This is optional. You can still opt in for a Traditional Deal.</span>
+            </p>
+            <div class="schnitt"></div>
+
+            <img src="https://i.imgur.com/DQg3k2M.png" class="img1">
+            <h2 class="sectiontitle">What We mean by That</h2>
+            <p class="paragraph">
+                Here at Unsync Records, we're all about breaking free from the traditional music industry norms.<br/>
+                We believe that artists should simply be able to get ther music out there without any annoying problems. For free..<br/><br/>
+
+                That's why there is a service here where you can publish your music without any ties or restrictions*.<br/><br/><br/>
+
+                When you join, you're not signing up for a Record Label.<br/>
+                You're joining a community of like-minded artists<br/>
+                who are passionate about making music on their own terms*.<br/>
+                Whether you're a seasoned pro or just starting out, we're here to support you every step of the way.<br/><br/>
+
+                Send us your Track and we'll do the rest.<br/><br/>
+
+                <span style="font-size: 12px; opacity: .8;">*As long as you follow the Copyright Guidelines, there are no restrictions.</span>
+            </p>
+            <div class="schnitt"></div>
+
+            <img src="https://i.imgur.com/M8BKT8p.png" class="img1">
+            <h2 class="sectiontitle">Send us that Demo</h2>
+            <p class="paragraph">
+                Want us to hear what you made<strong>?</strong><br/>
+                Send it over <span style="
+                position: absolute;
+                margin-top: -2px;
+                margin-left: 5px;">☻</span>
+            </p>
+            <a href="https://forms.gle/A5xGBJRE9VvMTtgD7" target="_blank">
+                <div class="contactbox" style="margin-bottom: 50px;"><h1 class="contacth1">submit</h1></div>
+            </a>
+            <div class="schnitt"></div>
+
+            <img src="https://i.imgur.com/EjRWtEh.png" class="img1">
+            <h2 class="sectiontitle">Yes, Free Music Distribution</h2>
+            <p class="paragraph">
+                In short,<br/><br/>
+                We'll get your music where it deserves to be..<br/>
+                On all the major streaming platforms like:<br/><br/>
+                
+                Amazon Music,<br/>
+                Apple Music,<br/>
+                SoundCloud,<br/>
+                Traxsource,<br/>
+                Instagram,<br/>
+                Facebook,<br/>
+                Beatport,<br/>
+                YouTube,<br/>
+                Spotify,<br/>
+                Deezer,<br/>
+                TikTok,<br/>
+                Tidal,<br/>
+                and many more.<br/><br/>
+
+                And the best part is that you retain 100<strong>%</strong> ownership of your music.<br/>
+                That means all the rights - publishing, master, you name it - stay firmly in your hands.*<br/><br/>
+
+                It won't cost you a penny to distribute with us.<br/>
+                We only take a tiny 9<strong>%</strong> cut of your royalties, compared to the 15<strong>%</strong> - 30<strong>%</strong> other distributors typically snatch.<br/><br/>
+
+                But that's it. We won't ask for anything else.<br/><br/><br/>
+
+                <span style="font-size: 12px; opacity: .8;">*Yep, you read that right. No strings attached. Everything you create stays yours. No catch.</span>
+            </p>
+            <div class="schnitt"></div>
+
+            <!--https://i.imgur.com/yn6AHzo.png-->
+            <img src="https://i.imgur.com/bth0i3G.png" class="img1">
+            <h2 class="sectiontitle">Contact</h2>
+            <p class="paragraph">
+                In case none of the above interests you, and you'd like to inquire about something else, you can surely write us an email.<br/><br/>
+
+                Or if it is actually related to something of the above, you can surely write us an email.<br/>
+            </p>
+            <a href="https://unsyncrecords.github.io/contact" target="_blank">
+                <div class="contactbox"><h1 class="contacth1">contact</h1></div>
+            </a>
+        </div>
+
+
+        <div class="footer">
+            <h3>COPYRIGHT &copy; Unsync Records.</h3>
+        </div>
+
+        <script>
+            //footer
+            var currentYear = new Date().getFullYear();
+            document.querySelector('.footer h3').innerHTML = "Unsync Records &copy; " + currentYear;
+        </script>
+    </body>
